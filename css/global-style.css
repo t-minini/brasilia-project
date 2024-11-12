@@ -1,0 +1,30 @@
+/* reset default styles for all elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%; /* base font size to 10px, to facilitate using REM unit */
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  /* color variables */
+  --soft-white: #f9f9f9;
+  --cool-gray: #e5e5e5;
+  --soft-blue: #617fb2;
+  --steel-blue: #4a7c95;
+  --graphite-gray: #3a3a3a;
+
+  /* font variables */
+  --open-sans: 'Open Sans', sans-serif;
+
+  /* font weights variables */
+  --medium-500: 500;
+}
+
+body {
+  color: var(--graphite-gray);
+  background-color: var(--cool-gray);
+}
