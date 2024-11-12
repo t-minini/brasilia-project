@@ -1,3 +1,4 @@
+/* hero section styling */
 .hero {
   height: 100dvh;
   width: 100%;
@@ -94,4 +95,81 @@
   100% {
     opacity: 0.5;
   }
+}
+
+/* explore section styling */
+.explore {
+  /* height: 100dvh; */
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  max-width: var(--content-width);
+  /* padding-top: 10rem; */
+  /* background-color: red; */
+  padding: 5rem 2rem;
+}
+
+.explore__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  /* background-color: yellowgreen; */
+}
+
+.explore__link {
+  background-color: var(--cool-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: var(--light-300);
+  letter-spacing: 0.12rem;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: color 0.5s ease-in;
+  position: relative;
+  color: var(--graphite-gray);
+  z-index: 1; /* Ensure the link text is on top */
+  /* color: #fff; Set the color to stand out */
+  text-shadow: 1px 1px 3px var(--soft-white), -1px -1px 3px var(--soft-white),
+    1px -1px 3px var(--soft-white), -1px 1px 3px var(--soft-white);
+}
+
+.explore__link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1; /* Place behind the text */
+}
+
+.explore__link:hover::before {
+  opacity: 1;
+}
+
+.explore__link-image-1::before {
+  background-image: url(./../assets/images/tesourinha.png);
+}
+
+.explore__link-image-2::before {
+  background-image: url(./../assets/images/193e5f7b4b37899a87a71180ee6f2a1c.jpg);
+}
+.explore__link-image-3::before {
+  background-image: url(./../assets/images/193e5f7b4b37899a87a71180ee6f2a1c.jpg);
+}
+.explore__link-image-4::before {
+  background-image: url(./../assets/images/193e5f7b4b37899a87a71180ee6f2a1c.jpg);
 }
