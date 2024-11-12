@@ -22,6 +22,8 @@
 
   /* font weights variables */
   --medium-500: 500;
+  --regular-400: 400;
+  --light-300: 300;
 
   /* other variables */
   --content-width: 1024px;
@@ -29,8 +31,10 @@
 
 body {
   color: var(--graphite-gray);
-  background-color: var(--cool-gray);
+  background-color: var(--soft-white);
   font-family: var(--open-sans);
+  display: flex;
+  justify-content: center;
 }
 
 html {

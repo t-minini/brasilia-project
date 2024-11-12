@@ -5,6 +5,7 @@
   position: fixed;
   display: flex;
   justify-content: center;
+  z-index: 99;
 }
 
 .navbar__container {
@@ -26,6 +27,7 @@
 
 .navbar__logo-text {
   font-size: 3.2rem;
+  font-weight: var(--regular-400);
   color: var(--graphite-gray);
 }
 
@@ -51,6 +53,7 @@
 
 .navbar__menu-link {
   font-size: 1.8rem;
+  font-weight: var(--light-300);
   text-decoration: none;
   color: var(--graphite-gray);
 }
