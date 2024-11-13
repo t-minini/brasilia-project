@@ -30,13 +30,13 @@
 }
 
 body {
-  color: var(--graphite-gray);
-  background-color: var(--soft-white);
-  font-family: var(--open-sans);
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
+  color: var(--graphite-gray);
+  font-family: var(--open-sans);
+  background-color: var(--soft-white);
 }
 
 html {
