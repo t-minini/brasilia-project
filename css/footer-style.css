@@ -1,0 +1,114 @@
+.footer {
+  background-color: var(--soft-blue);
+  min-width: var(--content-width);
+  display: flex;
+  justify-content: center;
+  height: 15rem;
+  color: var(--cool-gray);
+  padding: 2rem;
+}
+
+.footer__container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: red; */
+}
+
+.footer__text-container {
+  color: var(--cool-gray);
+  /* width: 30%; */
+  background-color: green;
+}
+
+.footer__title {
+  font-size: 3.4rem;
+  line-height: 3.2rem;
+  font-weight: var(--regular-400);
+}
+
+.footer__text {
+  font-size: 0.9rem;
+  font-weight: var(--light-300);
+  letter-spacing: 0.05rem;
+  padding-left: 0.3rem;
+}
+
+.footer__newsletter-container {
+  width: 30%;
+  /* background-color: yellow; */
+}
+
+.footer__newsletter-label {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-family: var(--open-sans);
+  font-weight: var(--light-300);
+  letter-spacing: 0.025rem;
+}
+
+.footer__newsletter-form {
+  display: flex;
+  align-items: center;
+}
+
+.footer__newsletter-input {
+  border: none;
+  height: 3rem;
+  width: 22rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.1rem;
+  /* color: var(--soft-blue); */
+  /* font-family: var(--open-sans); */
+  /* font-weight: var(--regular-400); */
+  background-color: var(--cool-gray);
+}
+
+.footer__newsletter-input::placeholder {
+  color: var(--soft-blue);
+  font-family: var(--open-sans);
+  font-weight: var(--regular-400);
+}
+
+.footer__newsletter-input:focus {
+  outline: none;
+  /* border: 2px solid var(--steel-blue); */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer__newsletter-button {
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+  color: var(--cool-gray);
+  border: 2px solid var(--cool-gray);
+  font-family: var(--open-sans);
+  font-weight: var(--light-300);
+  background-color: var(--soft-blue);
+}
+
+.footer__newsletter-button:hover {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer__map-container {
+  /* height: 5px; */
+  height: 100%;
+  width: 20%;
+  /* padding: 2rem 0; */
+  /* object-fit: cover; */
+}
+
+.footer__map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
