@@ -1,7 +1,7 @@
 .footer {
   display: flex;
-  height: 15rem;
-  padding: 2rem;
+  height: 18rem;
+  padding: 2rem 3rem;
   justify-content: center;
   color: var(--cool-gray);
   min-width: var(--content-width);
@@ -21,13 +21,13 @@
 }
 
 .footer__title {
-  font-size: 3.7rem;
+  font-size: 4.1rem;
   line-height: 3.2rem;
   font-weight: var(--regular-400);
 }
 
 .footer__text {
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-left: 0.3rem;
   letter-spacing: 0.05rem;
   font-weight: var(--light-300);
