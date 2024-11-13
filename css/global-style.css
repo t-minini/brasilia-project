@@ -37,6 +37,7 @@ body {
   color: var(--graphite-gray);
   font-family: var(--open-sans);
   background-color: var(--soft-white);
+  overflow: hidden;
 }
 
 html {

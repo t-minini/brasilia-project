@@ -74,6 +74,14 @@
   background: var(--steel-blue);
 }
 
+.navbar__menu-link--active {
+  color: var(--steel-blue);
+}
+
+.navbar__menu-link--active:after {
+  width: 100%;
+}
+
 .navbar__menu-link:hover::after {
   width: 100%;
   transition: width 0.3s;
