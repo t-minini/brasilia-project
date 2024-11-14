@@ -31,7 +31,9 @@
   max-width: var(--content-width);
 }
 
-.philosophy__container {
+.philosophy__container,
+.structures__container,
+.unique__container {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -110,8 +112,7 @@
   width: 100%;
   display: grid;
   padding: 0 3rem;
-  margin-top: 1.5rem;
-  margin-bottom: 3rem;
+  margin: 1.5rem 0;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -125,14 +126,66 @@
 }
 
 .philosophy__card-title {
-  width: 72%;
+  width: 80%;
   font-size: 1.8rem;
   text-align: center;
   padding-bottom: 1rem;
-  font-weight: var(--semiBold-600);
+  font-weight: var(--medium-500);
 }
 
 .philosophy__card-text {
   font-size: 1.6rem;
   text-align: center;
+  font-weight: var(--light-300);
+}
+
+/* structures section */
+.structures__content {
+  width: 100%;
+}
+.structures__title {
+  margin: 1.5rem 0;
+  font-size: 2.3rem;
+  line-height: 2.5rem;
+  font-weight: var(--regular-400);
+}
+
+.structures__image {
+  width: 100%;
+  object-fit: cover;
+  padding: 2rem 3rem;
+}
+
+/* unique section */
+.unique__card {
+  display: grid;
+  align-items: center;
+  margin-bottom: 3rem;
+  grid-template-columns: 50% 50%;
+}
+
+.unique__card-content {
+  margin: 0 3rem;
+}
+
+.unique__card-title {
+  font-size: 2.3rem;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: var(--medium-500);
+}
+
+.unique__card-text {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: var(--light-300);
+}
+
+.unique__card-image:first-child {
+  width: 100%;
+  padding-right: 0rem;
+}
+
+.unique__card-image {
+  width: 100%;
 }
