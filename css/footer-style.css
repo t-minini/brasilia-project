@@ -1,19 +1,19 @@
 .footer {
   display: flex;
+  width: 100%;
   height: 20rem;
-  padding: 2rem 3rem;
+  padding: 2rem 0;
   justify-content: center;
   color: var(--cool-gray);
-  min-width: var(--content-width);
   background-color: var(--soft-blue);
 }
 
 .footer__container {
-  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-width: var(--content-width);
 }
 
 .footer__text-container {
