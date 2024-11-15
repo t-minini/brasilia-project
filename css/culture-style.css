@@ -19,6 +19,22 @@
   line-height: 3rem;
 }
 
+.page__link {
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: var(--graphite-gray);
+  font-weight: var(--semiBold-600);
+}
+
+.page__link:hover {
+  color: var(--soft-blue);
+  text-decoration: underline;
+}
+
+.page__link:visited {
+  color: var(--soft-blue);
+}
+
 /* section containers */
 .hero__container {
   display: flex;
