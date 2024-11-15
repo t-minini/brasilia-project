@@ -9,6 +9,7 @@
 }
 
 .section__text {
+  width: 100%;
   font-size: 1.8rem;
   line-height: 2.5rem;
   font-weight: var(--light-300);
