@@ -47,11 +47,13 @@
   align-items: center;
   flex-direction: column;
 }
+
 .hero__title {
   font-size: 7.7rem;
   line-height: 6rem;
   font-weight: var(--regular-400);
 }
+
 .hero__text {
   font-size: 2rem;
   padding-left: 0.3rem;
@@ -62,7 +64,7 @@
 .hero__arrow-container {
   bottom: 0;
   width: 10%;
-  height: 20%;
+  height: 10%;
   display: flex;
   cursor: pointer;
   position: absolute;

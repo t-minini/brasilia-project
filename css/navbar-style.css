@@ -41,6 +41,10 @@
   display: flex;
 }
 
+.navbar__menu-container--hidden {
+  display: none;
+}
+
 .navbar__menu {
   display: flex;
   margin-top: 1rem;
