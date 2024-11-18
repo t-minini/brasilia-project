@@ -105,7 +105,6 @@
   display: flex;
   height: 100dvh;
   padding: 3rem;
-  /* scroll-padding-top: 0; */
   justify-content: center;
   max-width: var(--content-width);
 }
@@ -148,7 +147,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  filter: grayscale(50%);
+  filter: grayscale(90%);
   background-size: cover;
   background-position: center;
   transition: opacity 0.5s ease;
@@ -159,14 +158,14 @@
 }
 
 .explore__link-image-1::before {
-  background-image: url(./../assets/images/tesourinha.png);
+  background-image: url(./../assets/images/history-page.webp);
 }
 
 .explore__link-image-2::before {
-  background-image: url(./../assets/images/193e5f7b4b37899a87a71180ee6f2a1c.jpg);
+  background-image: url(./../assets/images/architecture-page.webp);
 }
 .explore__link-image-3::before {
-  background-image: url(./../assets/images/193e5f7b4b37899a87a71180ee6f2a1c.jpg);
+  background-image: url(./../assets/images/culture-page.webp);
 }
 .explore__link-image-4::before {
   background-image: url(./../assets/images/193e5f7b4b37899a87a71180ee6f2a1c.jpg);
