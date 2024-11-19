@@ -32,10 +32,8 @@
   max-width: var(--content-width);
 }
 
-.philosophy__container,
-.structures__container,
-.unique__container,
-.unesco__container {
+.green__container,
+.lake__container {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -90,4 +88,66 @@
   100% {
     opacity: 0.5;
   }
+}
+
+/* green section */
+.green__container {
+  padding-top: 10rem;
+}
+
+.green__card {
+  display: grid;
+  align-items: center;
+  margin: 3rem 0;
+  grid-template-columns: 50% 50%;
+}
+
+.green__card-content {
+  margin: 0 3rem;
+}
+
+.green__card-title {
+  font-size: 2.3rem;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: var(--medium-500);
+}
+
+.green__card-text {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: var(--light-300);
+}
+
+.green__card-image {
+  width: 100%;
+}
+
+/* lake section */
+.lake__card {
+  display: grid;
+  align-items: center;
+  margin: 3rem 0;
+  grid-template-columns: 50% 50%;
+}
+
+.lake__card-content {
+  margin: 0 3rem;
+}
+
+.lake__card-title {
+  font-size: 2.3rem;
+  line-height: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: var(--medium-500);
+}
+
+.lake__card-text {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: var(--light-300);
+}
+
+.lake__card-image {
+  width: 100%;
 }

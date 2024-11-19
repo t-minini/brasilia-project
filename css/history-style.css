@@ -29,7 +29,6 @@
   padding-top: 10rem;
   justify-content: center;
   max-width: var(--content-width);
-  /* scroll-padding-bottom: 10rem; */
 }
 
 .timeline__container,
@@ -97,6 +96,7 @@
 .timeline__container {
   padding-top: 10rem;
 }
+
 .timeline__row {
   width: 90%;
   display: grid;
