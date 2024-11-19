@@ -1,0 +1,52 @@
+.shop-banner__container {
+  display: flex;
+  height: 100dvh;
+  padding-top: 20rem;
+  align-items: center;
+  padding-bottom: 10rem;
+  flex-direction: column;
+  justify-content: center;
+  max-width: var(--content-width);
+}
+
+.shop-banner__image {
+  width: 100%;
+}
+
+.hero__arrow-container {
+  bottom: 0;
+  width: 15%;
+  height: 10%;
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--graphite-gray);
+  animation: pulse 3s ease-out;
+  animation-iteration-count: infinite;
+}
+
+.hero__arrow-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.24rem;
+  font-weight: var(--light-300);
+}
+
+.hero__arrow-icon {
+  height: 2.5rem;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 0.5;
+  }
+}

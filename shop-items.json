@@ -1,0 +1,14 @@
+[
+  {
+    "id": "001",
+    "img": "./assets/images/framed-poster.webp",
+    "item": "Framed Poster",
+    "price": "€29.99"
+  },
+  {
+    "id": "002",
+    "img": "./assets/images/framed-poster.webp",
+    "item": "Framed Poster 2",
+    "price": "€50.99"
+  }
+]
