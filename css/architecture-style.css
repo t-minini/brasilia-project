@@ -93,6 +93,10 @@
 }
 
 /* philosophy section */
+.philosophy__container {
+  padding-top: 10rem;
+}
+
 .philosophy__link {
   font-size: 1.8rem;
   line-height: 2.5rem;

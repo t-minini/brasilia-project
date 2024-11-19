@@ -105,6 +105,10 @@
 }
 
 /* art section */
+.art__container {
+  padding-top: 10rem;
+}
+
 .art__card {
   display: grid;
   align-items: center;
