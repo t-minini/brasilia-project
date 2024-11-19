@@ -8,7 +8,55 @@
   {
     "id": "002",
     "img": "./assets/images/framed-poster.webp",
-    "item": "Framed Poster 2",
+    "item": "Framed Poster",
+    "price": "€50.99"
+  },
+  {
+    "id": "003",
+    "img": "./assets/images/framed-poster.webp",
+    "item": "Framed Poster",
+    "price": "€50.99"
+  },
+  {
+    "id": "004",
+    "img": "./assets/images/framed-poster.webp",
+    "item": "Framed Poster",
+    "price": "€50.99"
+  },
+  {
+    "id": "005",
+    "img": "./assets/images/framed-poster.webp",
+    "item": "Framed Poster",
+    "price": "€50.99"
+  },
+  {
+    "id": "002",
+    "img": "./assets/images/framed-poster.webp",
+    "item": "Framed Poster",
+    "price": "€50.99"
+  },
+  {
+    "id": "003",
+    "img": "./assets/images/framed-poster.webp",
+    "item": "Framed Poster",
+    "price": "€50.99"
+  },
+  {
+    "id": "004",
+    "img": "./assets/images/framed-poster.webp",
+    "item": "Framed Poster",
+    "price": "€50.99"
+  },
+  {
+    "id": "005",
+    "img": "./assets/images/framed-poster.webp",
+    "item": "Framed Poster",
+    "price": "€50.99"
+  },
+  {
+    "id": "005",
+    "img": "./assets/images/framed-poster.webp",
+    "item": "Framed Poster",
     "price": "€50.99"
   }
 ]
