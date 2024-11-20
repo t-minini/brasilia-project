@@ -3,24 +3,24 @@
     "id": "001",
     "img": "./assets/images/shop-framed-poster.webp",
     "item": "Framed Poster",
-    "price": "€29.99"
+    "price": "29.99"
   },
   {
     "id": "002",
     "img": "./assets/images/shop-bag.webp",
     "item": "Tote Bag",
-    "price": "€50.99"
+    "price": "50.99"
   },
   {
     "id": "003",
     "img": "./assets/images/shop-shirt-white.webp",
     "item": "White T-shirt",
-    "price": "€50.99"
+    "price": "50.99"
   },
   {
     "id": "004",
     "img": "./assets/images/shop-shirt-black.webp",
     "item": "Black T-shirt",
-    "price": "€50.99"
+    "price": "50.99"
   }
 ]

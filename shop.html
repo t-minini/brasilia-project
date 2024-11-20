@@ -160,10 +160,53 @@
           />
         </a>
       </section>
+      <div class="top-container">
+        <h3 class="section__title">Shop</h3>
+        <!-- Cart container -->
+        <div class="shop-cart">
+          <h2 class="shop-cart-title">Your Cart</h2>
+          <div class="shop-cart-summary">
+            <p class="shop-cart-count">Number of Items 0</p>
+            <p class="shop-cart-total">Total of Purchase €0.00</p>
+          </div>
+          <button class="shop-checkout-btn">Checkout</button>
+        </div>
+      </div>
       <section
         class="shop__container shop-items__container"
         id="shop"
       ></section>
+      <!-- Checkout Modal -->
+      <div class="checkout-modal" id="checkout-modal">
+        <div class="checkout-modal-content">
+          <span id="close-checkout" class="close">&times;</span>
+          <h2>Checkout</h2>
+          <p>Purchase Total: <span id="purchase-total"></span></p>
+          <!-- Placeholder for purchase total -->
+
+          <form id="checkout-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" name="card-number" required />
+
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" required />
+
+            <button type="button" class="place-order-btn">Place Order</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Congratulation Modal -->
+      <div class="congratulation-modal" id="congratulation-modal">
+        <div class="congratulation-modal-content">
+          <span id="close-congratulation" class="close">&times;</span>
+          <h2>Congratulations!</h2>
+          <p>Your order has been placed successfully.</p>
+        </div>
+      </div>
     </main>
     <!-- footer content -->
     <footer class="footer" id="footer">
@@ -260,6 +303,9 @@
         </a>
       </div>
     </footer>
+    <!-- JavaScript files -->
     <script src="./javascript/shop.js"></script>
+    <script src="./javascript/cart.js"></script>
+    <script src="./javascript/checkout.js"></script>
   </body>
 </html>
