@@ -78,7 +78,7 @@
   padding: 1rem;
   align-items: center;
   flex-direction: column;
-  background-color: var(--cool-gray);
+  background-color: var(--soft-gray);
 }
 
 .shop-item:hover {

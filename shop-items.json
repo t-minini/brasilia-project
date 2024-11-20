@@ -1,62 +1,26 @@
 [
   {
     "id": "001",
-    "img": "./assets/images/framed-poster.webp",
+    "img": "./assets/images/shop-framed-poster.webp",
     "item": "Framed Poster",
     "price": "€29.99"
   },
   {
     "id": "002",
-    "img": "./assets/images/framed-poster.webp",
-    "item": "Framed Poster",
+    "img": "./assets/images/shop-bag.webp",
+    "item": "Tote Bag",
     "price": "€50.99"
   },
   {
     "id": "003",
-    "img": "./assets/images/framed-poster.webp",
-    "item": "Framed Poster",
+    "img": "./assets/images/shop-shirt-white.webp",
+    "item": "White T-shirt",
     "price": "€50.99"
   },
   {
     "id": "004",
-    "img": "./assets/images/framed-poster.webp",
-    "item": "Framed Poster",
-    "price": "€50.99"
-  },
-  {
-    "id": "005",
-    "img": "./assets/images/framed-poster.webp",
-    "item": "Framed Poster",
-    "price": "€50.99"
-  },
-  {
-    "id": "002",
-    "img": "./assets/images/framed-poster.webp",
-    "item": "Framed Poster",
-    "price": "€50.99"
-  },
-  {
-    "id": "003",
-    "img": "./assets/images/framed-poster.webp",
-    "item": "Framed Poster",
-    "price": "€50.99"
-  },
-  {
-    "id": "004",
-    "img": "./assets/images/framed-poster.webp",
-    "item": "Framed Poster",
-    "price": "€50.99"
-  },
-  {
-    "id": "005",
-    "img": "./assets/images/framed-poster.webp",
-    "item": "Framed Poster",
-    "price": "€50.99"
-  },
-  {
-    "id": "005",
-    "img": "./assets/images/framed-poster.webp",
-    "item": "Framed Poster",
+    "img": "./assets/images/shop-shirt-black.webp",
+    "item": "Black T-shirt",
     "price": "€50.99"
   }
 ]
