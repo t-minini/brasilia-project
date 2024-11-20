@@ -2,7 +2,6 @@
 .hero {
   display: flex;
   height: 100dvh;
-  /* padding-top: 10rem; */
   justify-content: center;
   max-width: var(--content-width);
 }

@@ -98,8 +98,8 @@
 
 .shop-item__price {
   font-size: 2rem;
-  margin-top: 0.5rem;
   line-height: 2rem;
+  margin-top: 0.5rem;
   font-weight: var(--light-300);
 }
 
