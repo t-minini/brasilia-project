@@ -166,10 +166,10 @@
         <div class="shop-cart">
           <h2 class="shop-cart-title">Your Cart</h2>
           <div class="shop-cart-summary">
-            <p class="shop-cart-count">Number of Items 0</p>
-            <p class="shop-cart-total">Total of Purchase €0.00</p>
+            <p class="shop-cart-count">Total Items: 00</p>
+            <p class="shop-cart-total">Total to Pay: €0.00</p>
           </div>
-          <button class="shop-checkout-btn">Checkout</button>
+          <button class="shop-checkout-btn" disabled title="">Checkout</button>
         </div>
       </div>
       <section
@@ -180,22 +180,54 @@
       <div class="checkout-modal" id="checkout-modal">
         <div class="checkout-modal-content">
           <span id="close-checkout" class="close">&times;</span>
-          <h2>Checkout</h2>
-          <p>Purchase Total: <span id="purchase-total"></span></p>
-          <!-- Placeholder for purchase total -->
+          <h2>Payment Information</h2>
 
-          <form id="checkout-form">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="card-number">Card Number</label>
-            <input type="text" id="card-number" name="card-number" required />
-
-            <label for="cvv">CVV</label>
-            <input type="text" id="cvv" name="cvv" required />
-
-            <button type="button" class="place-order-btn">Place Order</button>
+          <form class="form-container" id="checkout-form">
+            <div class="field-container">
+              <label for="name">Full Name</label>
+              <input id="name" maxlength="20" type="text" required />
+            </div>
+            <div class="field-container">
+              <label for="cardnumber">Card Number</label>
+              <input
+                id="cardnumber"
+                type="text"
+                inputmode="numeric"
+                required
+                minlength="16"
+                maxlength="19"
+                placeholder="0000-0000-0000-0000"
+                oninput="formatCardNumber(this)"
+              />
+            </div>
+            <div class="field-container">
+              <label for="expirationdate">Expiration Date</label>
+              <input
+                id="expirationdate"
+                type="text"
+                pattern="(0[1-9]|1[0-2])\/([0-9]{2})"
+                inputmode="numeric"
+                required
+                placeholder="MM/YY"
+                maxlength="5"
+                oninput="formatExpirationDate(this)"
+              />
+            </div>
+            <div class="field-container">
+              <label for="securitycode">Security Code</label>
+              <input
+                id="securitycode"
+                type="text"
+                pattern="[0-9]*"
+                inputmode="numeric"
+                required
+                minlength="3"
+                maxlength="3"
+              />
+            </div>
           </form>
+          <p>Purchase Total: <span id="purchase-total"></span></p>
+          <button type="submit" class="place-order-btn">Place Order</button>
         </div>
       </div>
 

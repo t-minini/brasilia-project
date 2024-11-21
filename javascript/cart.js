@@ -1,43 +1,41 @@
-// Global cart object to store item quantities
 window.cart = {};
 
-// Function to add an item to the cart
 function addToCart(item) {
-  // Add item to the cart or increase quantity if already in the cart
   if (window.cart[item.id]) {
     window.cart[item.id].quantity += 1;
   } else {
-    window.cart[item.id] = { item, quantity: 1 }; // Store item with quantity 1
+    window.cart[item.id] = { item, quantity: 1 };
   }
 
-  updateCart(); // Update cart UI
-  updateDeleteButton(item); // Update delete button visibility
+  updateCart();
+  updateDeleteButton(item);
+  updateCheckoutButtonState();
 }
 
-// Function to remove one item from the cart
 function removeFromCart(item) {
   if (window.cart[item.id] && window.cart[item.id].quantity > 0) {
     const cartItem = window.cart[item.id];
 
     if (cartItem.quantity > 1) {
-      cartItem.quantity -= 1; // Decrease quantity by 1
+      cartItem.quantity -= 1;
     } else {
-      delete window.cart[item.id]; // Remove the item if quantity is 0
+      delete window.cart[item.id];
     }
 
-    updateCart(); // Update cart UI
-    updateDeleteButton(item); // Update delete button visibility
+    updateCart();
+    updateDeleteButton(item);
+    updateCheckoutButtonState();
   }
 }
 
-// Function to update the cart UI (display item count and total price)
 function updateCart() {
   const cartItemCount = Object.values(window.cart).reduce(
     (total, cartItem) => total + cartItem.quantity,
     0
   );
 
-  // Calculate the total price by multiplying quantity with price
+  const formattedItemCount = String(cartItemCount).padStart(2, '0');
+
   const cartTotalPrice = Object.values(window.cart)
     .reduce(
       (total, cartItem) =>
@@ -48,23 +46,39 @@ function updateCart() {
     )
     .toFixed(2);
 
-  // Update the cart item count
   const cartItemCountElement = document.querySelector('.shop-cart-count');
-  cartItemCountElement.textContent = `Items: ${cartItemCount}`;
+  cartItemCountElement.textContent = `Total Items: ${formattedItemCount}`;
 
-  // Update the total price
   const cartTotalPriceElement = document.querySelector('.shop-cart-total');
-  cartTotalPriceElement.textContent = `Total: €${cartTotalPrice}`;
+  cartTotalPriceElement.textContent = `Total to Pay: €${cartTotalPrice}`;
 }
 
-// Function to update the delete button visibility based on item quantity
 function updateDeleteButton(item) {
   const itemCard = document.querySelector(`.shop-item[data-id="${item.id}"]`);
   const deleteButton = itemCard.querySelector('.shop-item__delete-button');
+  const inactiveDeleteButton = itemCard.querySelector(
+    '.shop-item__delete-button--inactive'
+  );
 
   if (window.cart[item.id] && window.cart[item.id].quantity > 0) {
-    deleteButton.style.display = 'block'; // Show delete button if quantity > 0
+    deleteButton.style.display = 'block';
+    inactiveDeleteButton.style.display = 'none';
   } else {
-    deleteButton.style.display = 'none'; // Hide delete button if quantity is 0
+    deleteButton.style.display = 'none';
+    inactiveDeleteButton.style.display = 'inline-block';
   }
 }
+
+function updateCheckoutButtonState() {
+  const checkoutButton = document.querySelector('.shop-checkout-btn');
+
+  if (Object.keys(window.cart).length > 0) {
+    checkoutButton.disabled = false;
+    checkoutButton.title = 'Proceed to Checkout';
+  } else {
+    checkoutButton.disabled = true;
+    checkoutButton.title = 'Add items to your cart to proceed';
+  }
+}
+
+document.addEventListener('DOMContentLoaded', updateCheckoutButtonState);
