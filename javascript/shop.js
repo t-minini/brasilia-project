@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', function () {
     .then((items) => {
       const itemsContainer = document.querySelector('.shop-items__container');
 
-      items.forEach((item) => {
+      const shuffledItems = shuffleArray(items);
+
+      shuffledItems.forEach((item) => {
         const itemCard = document.createElement('div');
         itemCard.classList.add('shop-item');
         itemCard.setAttribute('data-id', item.id);
@@ -42,4 +44,12 @@ document.addEventListener('DOMContentLoaded', function () {
     .catch((error) => {
       console.error('Error loading items data:', error);
     });
+
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
 });

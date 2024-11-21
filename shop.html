@@ -180,12 +180,18 @@
       <div class="checkout-modal" id="checkout-modal">
         <div class="checkout-modal-content">
           <span id="close-checkout" class="close">&times;</span>
-          <h2>Payment Information</h2>
-
+          <h2 class="payment-title">Payment Information</h2>
           <form class="form-container" id="checkout-form">
             <div class="field-container">
               <label for="name">Full Name</label>
-              <input id="name" maxlength="20" type="text" required />
+              <input
+                id="name"
+                maxlength="20"
+                type="text"
+                required
+                placeholder="John Doe"
+                class="card-input"
+              />
             </div>
             <div class="field-container">
               <label for="cardnumber">Card Number</label>
@@ -196,21 +202,23 @@
                 required
                 minlength="16"
                 maxlength="19"
-                placeholder="0000-0000-0000-0000"
+                placeholder="xxxx-xxxx-xxxx-xxxx"
                 oninput="formatCardNumber(this)"
+                class="card-input"
               />
             </div>
             <div class="field-container">
-              <label for="expirationdate">Expiration Date</label>
+              <label for="expirationdate">Expiration Dateeee</label>
               <input
                 id="expirationdate"
                 type="text"
                 pattern="(0[1-9]|1[0-2])\/([0-9]{2})"
                 inputmode="numeric"
                 required
-                placeholder="MM/YY"
+                placeholder="mm/yy"
                 maxlength="5"
                 oninput="formatExpirationDate(this)"
+                class="card-input"
               />
             </div>
             <div class="field-container">
@@ -223,20 +231,34 @@
                 required
                 minlength="3"
                 maxlength="3"
+                placeholder="xxx"
+                class="card-input"
               />
             </div>
           </form>
-          <p>Purchase Total: <span id="purchase-total"></span></p>
-          <button type="submit" class="place-order-btn">Place Order</button>
+          <div class="form-bottom">
+            <p class="purchase-text">
+              Purchase Total:
+              <span id="purchase-total" class="purchase-number"></span>
+            </p>
+            <button type="submit" class="place-order-btn">Place Order</button>
+          </div>
         </div>
       </div>
-
       <!-- Congratulation Modal -->
       <div class="congratulation-modal" id="congratulation-modal">
         <div class="congratulation-modal-content">
-          <span id="close-congratulation" class="close">&times;</span>
-          <h2>Congratulations!</h2>
-          <p>Your order has been placed successfully.</p>
+          <a
+            class="footer__text-container"
+            href="index.html"
+            title="Go to Home Page"
+          >
+            <span id="close-congratulation" class="close">&times;</span>
+          </a>
+
+          <h2 class="congrats-title">Congratulations!</h2>
+          <img class="congrats-img" src="./assets/icons/delivery.svg" alt="" />
+          <p class="congrats-text">Your order has been placed successfully.</p>
         </div>
       </div>
     </main>

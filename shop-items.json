@@ -2,25 +2,109 @@
   {
     "id": "001",
     "img": "./assets/images/shop-framed-poster.webp",
-    "item": "Framed Poster",
-    "price": "29.99"
+    "item": "Framed Art",
+    "price": "39.99"
   },
   {
     "id": "002",
     "img": "./assets/images/shop-bag.webp",
     "item": "Tote Bag",
-    "price": "50.99"
+    "price": "15.99"
   },
   {
     "id": "003",
     "img": "./assets/images/shop-shirt-white.webp",
-    "item": "White T-shirt",
-    "price": "50.99"
+    "item": "T-shirt",
+    "price": "29.99"
   },
   {
     "id": "004",
     "img": "./assets/images/shop-shirt-black.webp",
-    "item": "Black T-shirt",
-    "price": "50.99"
+    "item": "T-shirt",
+    "price": "29.99"
+  },
+  {
+    "id": "005",
+    "img": "./assets/images/tote-one.webp",
+    "item": "Tote Bag",
+    "price": "15.99"
+  },
+  {
+    "id": "006",
+    "img": "./assets/images/tote-two.webp",
+    "item": "Tote Bag",
+    "price": "15.99"
+  },
+  {
+    "id": "007",
+    "img": "./assets/images/tote-three.webp",
+    "item": "Tote Bag",
+    "price": "15.99"
+  },
+  {
+    "id": "008",
+    "img": "./assets/images/shirt-one.webp",
+    "item": "T-shirt",
+    "price": "29.99"
+  },
+  {
+    "id": "009",
+    "img": "./assets/images/shirt-two.webp",
+    "item": "T-shirt",
+    "price": "29.99"
+  },
+  {
+    "id": "010",
+    "img": "./assets/images/shirt-three.webp",
+    "item": "T-shirt",
+    "price": "29.99"
+  },
+  {
+    "id": "011",
+    "img": "./assets/images/shirt-four.webp",
+    "item": "T-shirt",
+    "price": "29.99"
+  },
+  {
+    "id": "012",
+    "img": "./assets/images/shirt-five.webp",
+    "item": "T-shirt",
+    "price": "29.99"
+  },
+  {
+    "id": "013",
+    "img": "./assets/images/mug-one.webp",
+    "item": "Mug",
+    "price": "9.99"
+  },
+  {
+    "id": "014",
+    "img": "./assets/images/mug-two.webp",
+    "item": "Mug",
+    "price": "9.99"
+  },
+  {
+    "id": "015",
+    "img": "./assets/images/mug-three.webp",
+    "item": "Mug",
+    "price": "9.99"
+  },
+  {
+    "id": "016",
+    "img": "./assets/images/but-four.webp",
+    "item": "Mug",
+    "price": "9.99"
+  },
+  {
+    "id": "017",
+    "img": "./assets/images/cup-one.webp",
+    "item": "Cup",
+    "price": "5.99"
+  },
+  {
+    "id": "019",
+    "img": "./assets/images/cup-two.webp",
+    "item": "Cup",
+    "price": "5.99"
   }
 ]
