@@ -417,7 +417,7 @@ label {
   .shop-banner__container {
     display: flex;
     height: 100dvh;
-    padding-top: 20rem;
+    padding-top: 10rem;
     align-items: center;
     padding-bottom: 10rem;
     flex-direction: column;
