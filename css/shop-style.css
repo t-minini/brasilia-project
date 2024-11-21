@@ -4,7 +4,7 @@
   height: 100dvh;
   /* padding-top: 20rem; */
   align-items: center;
-  padding-bottom: 10rem;
+  padding-bottom: 7rem;
   flex-direction: column;
   justify-content: center;
   /* max-width: var(--content-width); */
@@ -13,7 +13,9 @@
 .shop-banner__image {
   width: 100%;
   height: 100%;
-  background-size: cover;
+  object-fit: cover;
+  padding: 0 2rem;
+  padding-top: 5rem;
 }
 
 .hero__arrow-container {
@@ -173,6 +175,7 @@
   background-color: var(--soft-gray);
   border: 1px solid #666;
   width: 100%;
+  margin-top: 1rem;
 }
 
 .shop-checkout-btn:not([disabled]) {
@@ -184,6 +187,7 @@
   border: 1px solid var(--soft-blue);
   background-color: var(--soft-blue);
   width: 100%;
+  margin-top: 1rem;
 }
 
 .shop-checkout-btn:not([disabled]):hover {
@@ -249,15 +253,14 @@
 .congratulation-modal-content {
   top: 50%;
   left: 50%;
-  width: 50%;
-  height: 50%;
+  width: 90%;
+  height:fit-content;
   padding: 2.5rem;
   position: absolute;
   border-radius: 1rem;
   background-color: var(--soft-white);
   transform: translate(-50%, -50%);
 }
-
 .form-bottom {
   display: flex;
   padding-top: 2rem;
@@ -403,7 +406,7 @@ label {
 
 .congrats-text {
   width: 100%;
-  height: 25rem;
+  /* height: 25rem; */
   font-size: 2rem;
   text-align: center;
 }
@@ -546,6 +549,7 @@ label {
   .top-container {
     display: flex;
     align-items: center;
+    flex-direction: row;
   }
 
   /* shop cart */
@@ -560,7 +564,7 @@ label {
   .shop-cart-title {
     font-size: 2.1rem;
     width: 100%;
-    letter-spacing: 0.62rem;
+    letter-spacing: 0.5rem;
   }
 
   .shop-cart-count {

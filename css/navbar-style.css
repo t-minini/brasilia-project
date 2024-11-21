@@ -50,7 +50,7 @@
 .navbar__menu-container {
   right: 0;
   top: 100%;
-  width: 30%;
+  width: 50%;
   display: none;
   margin-top: -1px;
   position: absolute;
@@ -106,7 +106,7 @@
 
 .navbar__toggle-label {
   line-height: 0;
-  font-size: 3rem;
+  font-size: 5rem;
   color: var(--graphite-gray);
 }
 
