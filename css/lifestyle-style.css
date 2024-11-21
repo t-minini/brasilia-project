@@ -9,14 +9,17 @@
 }
 
 .section__text {
-  width: 100%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.5rem;
   font-weight: var(--light-300);
 }
 
 .section__text--modifier {
   line-height: 3rem;
+}
+
+.section__text--modifier:first-of-type {
+  margin-bottom: 1.5rem;
 }
 
 .page__link {
@@ -39,7 +42,7 @@
 .hero__container {
   display: flex;
   height: 100dvh;
-  padding-top: 10rem;
+  padding-top: 5rem;
   justify-content: center;
   max-width: var(--content-width);
 }
@@ -52,15 +55,16 @@
   align-items: center;
   flex-direction: column;
   max-width: var(--content-width);
+  padding: 0 2rem;
 }
 
 /* hero section */
 .hero__text {
-  height: 90%;
+  height: 100%;
   width: 100%;
   display: flex;
   padding: 0 2rem;
-  font-size: 2.8rem;
+  font-size: 1.9rem;
   text-align: center;
   align-items: center;
   font-weight: var(--light-300);
@@ -106,18 +110,24 @@
 
 /* art section */
 .art__container {
-  padding-top: 10rem;
+  padding-top: 5rem;
+  /* padding: 0 2rem; */
 }
 
 .art__card {
   display: grid;
   align-items: center;
   margin: 3rem 0;
-  grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50%; */
+}
+
+.art__card:nth-child(4) {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .art__card-content {
-  margin: 0 3rem;
+  /* margin: 0 3rem; */
 }
 
 .art__card-title {
@@ -142,11 +152,11 @@
   display: grid;
   align-items: center;
   margin: 3rem 0;
-  grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50%; */
 }
 
 .music__card-content {
-  margin: 0 3rem;
+  /* margin: 0 3rem; */
 }
 
 .music__card-title {
@@ -154,6 +164,11 @@
   line-height: 2.5rem;
   margin-bottom: 1.5rem;
   font-weight: var(--medium-500);
+}
+
+.music__card:nth-child(4) {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .music__card-text {
@@ -171,11 +186,16 @@
   display: grid;
   align-items: center;
   margin: 3rem 0;
-  grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50%; */
 }
 
 .cuisine__card-content {
-  margin: 0 3rem;
+  /* margin: 0 3rem; */
+}
+
+.cuisine__card:nth-child(4) {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .cuisine__card-title {
@@ -200,11 +220,16 @@
   display: grid;
   align-items: center;
   margin: 3rem 0;
-  grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50% */
+}
+
+.lifestyle__card:nth-child(4) {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .lifestyle__card-content {
-  margin: 0 3rem;
+  /* margin: 0 3rem; */
 }
 
 .lifestyle__card-title {
@@ -222,4 +247,249 @@
 
 .lifestyle__card-image {
   width: 100%;
+}
+
+/* medium screen size */
+@media screen and (min-width: 992px) {
+  /* general style */
+  .section__title {
+    width: 100%;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+    font-weight: var(--regular-400);
+  }
+
+  .section__text {
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: var(--light-300);
+  }
+
+  .section__text--modifier {
+    line-height: 3rem;
+  }
+
+  .page__link {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: var(--graphite-gray);
+    font-weight: var(--semiBold-600);
+  }
+
+  .page__link:hover {
+    color: var(--soft-blue);
+    text-decoration: underline;
+  }
+
+  .page__link:visited {
+    color: var(--soft-blue);
+  }
+
+  /* section containers */
+  .hero__container {
+    display: flex;
+    height: 100dvh;
+    padding-top: 10rem;
+    justify-content: center;
+    max-width: var(--content-width);
+  }
+
+  .art__container,
+  .music__container,
+  .cuisine__container,
+  .lifestyle__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: var(--content-width);
+  }
+
+  /* hero section */
+  .hero__text {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    padding: 0 2rem;
+    font-size: 2.8rem;
+    text-align: center;
+    align-items: center;
+    font-weight: var(--light-300);
+  }
+
+  .hero__arrow-container {
+    bottom: 0;
+    width: 10%;
+    height: 20%;
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--graphite-gray);
+    animation: pulse 3s ease-out;
+    animation-iteration-count: infinite;
+  }
+
+  .hero__arrow-text {
+    font-size: 1.6rem;
+    letter-spacing: 0.24rem;
+    font-weight: var(--light-300);
+  }
+
+  .hero__arrow-icon {
+    height: 2.5rem;
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+
+  /* art section */
+  .art__container {
+    padding-top: 10rem;
+  }
+
+  .art__card {
+    display: grid;
+    align-items: center;
+    margin: 3rem 0;
+    grid-template-columns: 50% 50%;
+  }
+
+  .art__card:nth-child(4) {
+    display: grid;
+  }
+
+  .art__card-content {
+    margin: 0 3rem;
+  }
+
+  .art__card-title {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: var(--medium-500);
+  }
+
+  .art__card-text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: var(--light-300);
+  }
+
+  .art__card-image {
+    width: 100%;
+  }
+
+  /* music section */
+  .music__card {
+    display: grid;
+    align-items: center;
+    margin: 3rem 0;
+    grid-template-columns: 50% 50%;
+  }
+
+  .music__card-content {
+    margin: 0 3rem;
+  }
+
+  .music__card-title {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: var(--medium-500);
+  }
+
+  .music__card-text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: var(--light-300);
+  }
+
+  .music__card-image {
+    width: 100%;
+  }
+
+  /* cuisine section */
+  .cuisine__card {
+    display: grid;
+    align-items: center;
+    margin: 3rem 0;
+    grid-template-columns: 50% 50%;
+  }
+
+  .cuisine__card-content {
+    margin: 0 3rem;
+  }
+
+  .cuisine__card-title {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: var(--medium-500);
+  }
+
+  .cuisine__card:nth-child(4) {
+    display: grid;
+  }
+
+  .cuisine__card-text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: var(--light-300);
+  }
+
+  .cuisine__card-image {
+    width: 100%;
+  }
+
+  /* lifestyle section */
+  .lifestyle__card {
+    display: grid;
+    align-items: center;
+    margin: 3rem 0;
+    grid-template-columns: 50% 50%;
+  }
+
+  .lifestyle__card-content {
+    margin: 0 3rem;
+  }
+
+  .lifestyle__card-title {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: var(--medium-500);
+  }
+
+  .lifestyle__card-text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: var(--light-300);
+  }
+
+  .lifestyle__card-image {
+    width: 100%;
+  }
+
+  .lifestyle__card:nth-child(4) {
+    display: grid;
+  }
+
+  .music__card:nth-child(4) {
+    display: grid;
+  }
 }

@@ -9,8 +9,7 @@
 }
 
 .section__text {
-  width: 100%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.5rem;
   font-weight: var(--light-300);
 }
@@ -27,9 +26,9 @@
 .hero__container {
   display: flex;
   height: 100dvh;
-  padding-top: 10rem;
+  width: 100%;
+  padding-top: 5rem;
   justify-content: center;
-  max-width: var(--content-width);
 }
 
 .philosophy__container,
@@ -40,15 +39,16 @@
   align-items: center;
   flex-direction: column;
   max-width: var(--content-width);
+  padding: 0 2rem;
 }
 
 /* hero section */
 .hero__text {
-  height: 90%;
+  height: 100%;
   width: 100%;
   display: flex;
   padding: 0 2rem;
-  font-size: 2.8rem;
+  font-size: 1.9rem;
   text-align: center;
   align-items: center;
   font-weight: var(--light-300);
@@ -94,7 +94,7 @@
 
 /* philosophy section */
 .philosophy__container {
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 
 .philosophy__link {
@@ -117,10 +117,10 @@
   gap: 3rem;
   width: 100%;
   display: grid;
-  padding: 0 3rem;
+  /* padding: 0 3rem; */
   margin: 1.5rem 0;
   justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
 }
 
 .philosophy__card {
@@ -148,6 +148,7 @@
 /* structures section */
 .structures__content {
   width: 100%;
+  /* padding: 0 2rem; */
 }
 .structures__title {
   margin: 1.5rem 0;
@@ -159,7 +160,7 @@
 .structures__image {
   width: 100%;
   object-fit: cover;
-  padding: 2rem 3rem;
+  padding: 2rem 0;
 }
 
 /* unique section */
@@ -167,11 +168,16 @@
   display: grid;
   align-items: center;
   margin-bottom: 3rem;
-  grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50%; */
+}
+
+.unique__card:nth-child(3) {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .unique__card-content {
-  margin: 0 3rem;
+  /* margin: 0 3rem; */
 }
 
 .unique__card-title {
@@ -201,11 +207,12 @@
   display: grid;
   align-items: center;
   margin-bottom: 3rem;
-  grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50%; */
 }
 
 .unesco__card-content {
-  margin: 0 3rem;
+  /* margin: 0 3rem; */
+  margin-bottom: 1rem;
 }
 
 .unesco__card-text {
@@ -216,4 +223,233 @@
 
 .unesco__card-image {
   width: 100%;
+}
+
+/* medium screen size */
+@media screen and (min-width: 992px) {
+  /* general style */
+  .section__title {
+    width: 100%;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+    font-weight: var(--regular-400);
+  }
+
+  .section__text {
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: var(--light-300);
+    padding: 0;
+  }
+
+  .section__text--modifier {
+    line-height: 3rem;
+  }
+
+  .section__text--modifier:first-of-type {
+    margin-bottom: 1.5rem;
+  }
+
+  /* section containers */
+  .hero__container {
+    display: flex;
+    height: 100dvh;
+    padding-top: 10rem;
+    justify-content: center;
+    max-width: var(--content-width);
+  }
+
+  .philosophy__container,
+  .structures__container,
+  .unique__container,
+  .unesco__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: var(--content-width);
+  }
+
+  /* hero section */
+  .hero__text {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    padding: 0 2rem;
+    font-size: 2.8rem;
+    text-align: center;
+    align-items: center;
+    font-weight: var(--light-300);
+  }
+
+  .hero__arrow-container {
+    bottom: 0;
+    width: 10%;
+    height: 20%;
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--graphite-gray);
+    animation: pulse 3s ease-out;
+    animation-iteration-count: infinite;
+  }
+
+  .hero__arrow-text {
+    font-size: 1.6rem;
+    letter-spacing: 0.24rem;
+    font-weight: var(--light-300);
+  }
+
+  .hero__arrow-icon {
+    height: 2.5rem;
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+
+  /* philosophy section */
+  .philosophy__container {
+    padding-top: 10rem;
+  }
+
+  .philosophy__link {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: var(--graphite-gray);
+    font-weight: var(--semiBold-600);
+  }
+
+  .philosophy__link:hover {
+    color: var(--soft-blue);
+    text-decoration: underline;
+  }
+
+  .philosophy__link:visited {
+    color: var(--soft-blue);
+  }
+
+  .philosophy__cards-container {
+    gap: 3rem;
+    width: 100%;
+    display: grid;
+    padding: 0 3rem;
+    margin: 1.5rem 0;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .philosophy__card {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cool-gray);
+  }
+
+  .philosophy__card-title {
+    width: 80%;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: var(--medium-500);
+  }
+
+  .philosophy__card-text {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: var(--light-300);
+  }
+
+  /* structures section */
+  .structures__content {
+    width: 100%;
+    padding: 0;
+  }
+  .structures__title {
+    margin: 1.5rem 0;
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    font-weight: var(--regular-400);
+  }
+
+  .structures__image {
+    width: 100%;
+    object-fit: cover;
+    padding: 2rem 3rem;
+  }
+
+  /* unique section */
+  .unique__card {
+    display: grid;
+    align-items: center;
+    margin-bottom: 3rem;
+    grid-template-columns: 50% 50%;
+  }
+
+  .unique__card:nth-child(3) {
+    display: grid;
+  }
+
+  .unique__card-content {
+    margin: 0 3rem;
+  }
+
+  .unique__card-title {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: var(--medium-500);
+  }
+
+  .unique__card-text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: var(--light-300);
+  }
+
+  .unique__card-image:first-child {
+    width: 100%;
+    padding-right: 0rem;
+  }
+
+  .unique__card-image {
+    width: 100%;
+  }
+
+  /* unesco section */
+  .unesco__card {
+    display: grid;
+    align-items: center;
+    margin-bottom: 3rem;
+    grid-template-columns: 50% 50%;
+  }
+
+  .unesco__card-content {
+    margin: 0 3rem;
+  }
+
+  .unesco__card-text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: var(--light-300);
+  }
+
+  .unesco__card-image {
+    width: 100%;
+  }
 }

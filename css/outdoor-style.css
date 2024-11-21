@@ -9,8 +9,7 @@
 }
 
 .section__text {
-  width: 100%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.5rem;
   font-weight: var(--light-300);
 }
@@ -27,7 +26,7 @@
 .hero__container {
   display: flex;
   height: 100dvh;
-  padding-top: 10rem;
+  padding-top: 5rem;
   justify-content: center;
   max-width: var(--content-width);
 }
@@ -38,15 +37,16 @@
   align-items: center;
   flex-direction: column;
   max-width: var(--content-width);
+  padding: 0 2rem;
 }
 
 /* hero section */
 .hero__text {
-  height: 90%;
+  height: 100%;
   width: 100%;
   display: flex;
   padding: 0 2rem;
-  font-size: 2.8rem;
+  font-size: 1.9rem;
   text-align: center;
   align-items: center;
   font-weight: var(--light-300);
@@ -92,18 +92,23 @@
 
 /* green section */
 .green__container {
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 
 .green__card {
   display: grid;
   align-items: center;
   margin: 3rem 0;
-  grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50%; */
+}
+
+.green__card:nth-child(4) {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .green__card-content {
-  margin: 0 3rem;
+  /* margin: 0 3rem; */
 }
 
 .green__card-title {
@@ -128,11 +133,16 @@
   display: grid;
   align-items: center;
   margin: 3rem 0;
-  grid-template-columns: 50% 50%;
+  /* grid-template-columns: 50% 50%; */
+}
+
+.lake__card:nth-child(4) {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .lake__card-content {
-  margin: 0 3rem;
+  /* margin: 0 3rem; */
 }
 
 .lake__card-title {
@@ -150,4 +160,169 @@
 
 .lake__card-image {
   width: 100%;
+}
+
+/* medium screen size */
+@media screen and (min-width: 992px) {
+  /* general style */
+  .section__title {
+    width: 100%;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+    font-weight: var(--regular-400);
+  }
+
+  .section__text {
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: var(--light-300);
+  }
+
+  .section__text--modifier {
+    line-height: 3rem;
+  }
+
+  .section__text--modifier:first-of-type {
+    margin-bottom: 1.5rem;
+  }
+
+  /* section containers */
+  .hero__container {
+    display: flex;
+    height: 100dvh;
+    padding-top: 10rem;
+    justify-content: center;
+    max-width: var(--content-width);
+  }
+
+  .green__container,
+  .lake__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: var(--content-width);
+  }
+
+  /* hero section */
+  .hero__text {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    padding: 0 2rem;
+    font-size: 2.8rem;
+    text-align: center;
+    align-items: center;
+    font-weight: var(--light-300);
+  }
+
+  .hero__arrow-container {
+    bottom: 0;
+    width: 10%;
+    height: 20%;
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--graphite-gray);
+    animation: pulse 3s ease-out;
+    animation-iteration-count: infinite;
+  }
+
+  .hero__arrow-text {
+    font-size: 1.6rem;
+    letter-spacing: 0.24rem;
+    font-weight: var(--light-300);
+  }
+
+  .hero__arrow-icon {
+    height: 2.5rem;
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+
+  /* green section */
+  .green__container {
+    padding-top: 10rem;
+  }
+
+  .green__card {
+    display: grid;
+    align-items: center;
+    margin: 3rem 0;
+    grid-template-columns: 50% 50%;
+  }
+
+  .green__card:nth-child(4) {
+    display: grid;
+  }
+
+  .green__card-content {
+    margin: 0 3rem;
+  }
+
+  .green__card-title {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: var(--medium-500);
+  }
+
+  .green__card-text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: var(--light-300);
+  }
+
+  .green__card-image {
+    width: 100%;
+  }
+
+  /* lake section */
+  .lake__card {
+    display: grid;
+    align-items: center;
+    margin: 3rem 0;
+    grid-template-columns: 50% 50%;
+  }
+
+  .lake__card:nth-child(4) {
+    display: grid
+  }
+
+  .lake__card-content {
+    margin: 0 3rem;
+  }
+
+  .lake__card-title {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: var(--medium-500);
+  }
+
+  .lake__card-text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-weight: var(--light-300);
+  }
+
+  .lake__card-image {
+    width: 100%;
+  }
 }

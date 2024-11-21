@@ -30,7 +30,7 @@
   height: 100dvh;
   padding-top: 5rem;
   justify-content: center;
-  max-width: var(--content-width);
+  /* max-width: var(--content-width); */
 }
 
 .timeline__container,
