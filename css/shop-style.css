@@ -2,12 +2,10 @@
 .shop-banner__container {
   display: flex;
   height: 100dvh;
-  /* padding-top: 20rem; */
   align-items: center;
   padding-bottom: 7rem;
   flex-direction: column;
   justify-content: center;
-  /* max-width: var(--content-width); */
 }
 
 .shop-banner__image {
@@ -139,7 +137,6 @@
   align-items: center;
   flex-direction: column;
   padding: 0 2rem;
-  /* background-color: red; */
 }
 
 /* shop cart */
