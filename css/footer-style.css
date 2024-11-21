@@ -45,7 +45,7 @@
 }
 
 .footer__newsletter {
-  padding-top: 2rem;
+  padding-top: 0rem;
   padding-bottom: 1rem;
 }
 
@@ -61,7 +61,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* padding: 2rem 0; */
 }
 
 .footer__newsletter-input {
