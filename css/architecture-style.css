@@ -117,10 +117,8 @@
   gap: 3rem;
   width: 100%;
   display: grid;
-  /* padding: 0 3rem; */
   margin: 1.5rem 0;
   justify-items: center;
-  /* grid-template-columns: repeat(3, 1fr); */
 }
 
 .philosophy__card {
@@ -168,16 +166,11 @@
   display: grid;
   align-items: center;
   margin-bottom: 3rem;
-  /* grid-template-columns: 50% 50%; */
 }
 
 .unique__card:nth-child(3) {
   display: flex;
   flex-direction: column-reverse;
-}
-
-.unique__card-content {
-  /* margin: 0 3rem; */
 }
 
 .unique__card-title {
@@ -207,11 +200,9 @@
   display: grid;
   align-items: center;
   margin-bottom: 3rem;
-  /* grid-template-columns: 50% 50%; */
 }
 
 .unesco__card-content {
-  /* margin: 0 3rem; */
   margin-bottom: 1rem;
 }
 

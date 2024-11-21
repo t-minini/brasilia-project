@@ -99,16 +99,11 @@
   display: grid;
   align-items: center;
   margin: 3rem 0;
-  /* grid-template-columns: 50% 50%; */
 }
 
 .green__card:nth-child(4) {
   display: flex;
   flex-direction: column-reverse;
-}
-
-.green__card-content {
-  /* margin: 0 3rem; */
 }
 
 .green__card-title {
@@ -133,16 +128,11 @@
   display: grid;
   align-items: center;
   margin: 3rem 0;
-  /* grid-template-columns: 50% 50%; */
 }
 
 .lake__card:nth-child(4) {
   display: flex;
   flex-direction: column-reverse;
-}
-
-.lake__card-content {
-  /* margin: 0 3rem; */
 }
 
 .lake__card-title {

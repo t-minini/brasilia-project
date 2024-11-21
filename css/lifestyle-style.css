@@ -111,23 +111,17 @@
 /* art section */
 .art__container {
   padding-top: 5rem;
-  /* padding: 0 2rem; */
 }
 
 .art__card {
   display: grid;
   align-items: center;
   margin: 3rem 0;
-  /* grid-template-columns: 50% 50%; */
 }
 
 .art__card:nth-child(4) {
   display: flex;
   flex-direction: column-reverse;
-}
-
-.art__card-content {
-  /* margin: 0 3rem; */
 }
 
 .art__card-title {
@@ -153,10 +147,6 @@
   align-items: center;
   margin: 3rem 0;
   /* grid-template-columns: 50% 50%; */
-}
-
-.music__card-content {
-  /* margin: 0 3rem; */
 }
 
 .music__card-title {
@@ -186,11 +176,6 @@
   display: grid;
   align-items: center;
   margin: 3rem 0;
-  /* grid-template-columns: 50% 50%; */
-}
-
-.cuisine__card-content {
-  /* margin: 0 3rem; */
 }
 
 .cuisine__card:nth-child(4) {
@@ -220,16 +205,11 @@
   display: grid;
   align-items: center;
   margin: 3rem 0;
-  /* grid-template-columns: 50% 50% */
 }
 
 .lifestyle__card:nth-child(4) {
   display: flex;
   flex-direction: column-reverse;
-}
-
-.lifestyle__card-content {
-  /* margin: 0 3rem; */
 }
 
 .lifestyle__card-title {
